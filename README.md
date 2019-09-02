@@ -8,7 +8,10 @@ Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will 
 ##Technologies Used My project used HTML,CSS,bootstrap,angular and javascript languages.
 
 ##Code scaffolding
-Run ng generate component component-name to generate a new component. You can also use ng generate directive|pipe|service|class|guard|interface|enum|module. ##Support and contact details If you encount any problem please let me know.below is my email ##E-mail:anithaumuhire@gmail.com ##https://github.com/Anitha987/AnQuote-app.git
+Run ng generate component component-name to generate a new component. You can also use ng generate directive|pipe|service|class|guard|interface|enum|module. 
+##Support and contact details If you encount any problem please let me know.below is my email
+ 
+ ##E-mail:anithaumuhire@gmail.com ##https://github.com/Anitha987/AnQuote-app.git
 
 Build
 Run ng build to build the project. The build artifacts will be stored in the dist/ directory. Use the --prod flag for a production build.
