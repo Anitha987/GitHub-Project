@@ -19,7 +19,7 @@ Run ng build to build the project. The build artifacts will be stored in the dis
 ##Running unit tests
 Run ng test to execute the unit tests via Karma.
 
-Running end-to-end tests
+##Running end-to-end tests
 Run ng e2e to execute the end-to-end test via Protractor.
 
 Copyright (c) [2019] [umuhire anitha]
