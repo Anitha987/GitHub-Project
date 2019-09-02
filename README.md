@@ -1,4 +1,4 @@
-###{AnQuote project}
+###{Github-pro project}
 
 ##Description This project is all about quotes ,where one can add his or her own quote.basing on the structure provided.
 
