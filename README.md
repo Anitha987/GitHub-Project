@@ -1,6 +1,6 @@
 ###{Github-pro project}
 
-##Description This project is all about quotes ,where one can add his or her own quote.basing on the structure provided.
+##Description This project is all about the GitHub .
 
 Development server
 Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files. ##Setup/Installation Requirements my end user must have chrome must have visual code studio bootstrap ubuntu setup. ##Technologies Used My project used HTML,CSS,bootstrap,angular and javascript languages.
