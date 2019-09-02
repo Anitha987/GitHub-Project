@@ -7,7 +7,7 @@ Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will 
 ##Setup/Installation Requirements my end user must have chrome must have visual code studio bootstrap ubuntu setup. 
 ##Technologies Used My project used HTML,CSS,bootstrap,angular and javascript languages.
 
-Code scaffolding
+##Code scaffolding
 Run ng generate component component-name to generate a new component. You can also use ng generate directive|pipe|service|class|guard|interface|enum|module. ##Support and contact details If you encount any problem please let me know.below is my email ##E-mail:anithaumuhire@gmail.com ##https://github.com/Anitha987/AnQuote-app.git
 
 Build
