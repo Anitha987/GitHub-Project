@@ -13,7 +13,7 @@ Run ng generate component component-name to generate a new component. You can al
  
  ##E-mail:anithaumuhire@gmail.com ##https://github.com/Anitha987/AnQuote-app.git
 
-Build
+##Build
 Run ng build to build the project. The build artifacts will be stored in the dist/ directory. Use the --prod flag for a production build.
 
 Running unit tests
