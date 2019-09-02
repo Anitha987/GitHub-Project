@@ -2,7 +2,7 @@
 
 ##Description This project is all about the GitHub,where a person can access his/her account and those of others .
 
-Development server
+##Development server
 Run ng serve for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files. ##Setup/Installation Requirements my end user must have chrome must have visual code studio bootstrap ubuntu setup. ##Technologies Used My project used HTML,CSS,bootstrap,angular and javascript languages.
 
 Code scaffolding
