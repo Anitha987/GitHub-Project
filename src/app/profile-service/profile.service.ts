@@ -20,5 +20,5 @@ private clientsecret='27c969407fe2146a312a660856ddec5e477dad52';
 //   updateProfile(gitUserProfile:string){
 //     this.gitUsersProfile = gitUsersProfile;
   }
-}
+
 
