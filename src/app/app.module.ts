@@ -5,19 +5,25 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AnithaComponent } from './anitha/anitha.component';
 import { AnithaFormComponent } from './anitha-form/anitha-form.component';
-
+import {ProfileService} from './profile-service/profile.service';
+import { ViewComponent } from './view/view.component';
 @NgModule({
   declarations: [
     AppComponent,
     AnithaComponent,
-    AnithaFormComponent
+    AnithaFormComponent,
+    ViewComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule
+
+
   ],
-  providers: [],
+  providers: [
+    ProfileService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
