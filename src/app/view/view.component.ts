@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProfileService } from '../profile-service/profile.service';
-import { HttpClient } from '@angular/common/http';
+import { ProfileService } from '/profile-service/profile.service';
 
 @Component({
   selector: 'app-view',
@@ -8,22 +7,27 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./view.component.css']
 })
 export class ViewComponent implements OnInit {
-  userName:string = "";
-  response:any;
-  gitUsersProfile:string;
+  view:any;
+  repositories:any;
+  gitUserName:string;
 
 
-constructor(private http:HttpClient){
- 
-}
+constructor(private profileService: ProfileService){
+ }
+ findProfile(){
+  this.profileService.updateProfile(this.gitUserName);
+  this.profileService.getProfileInfo().subscribe(view =>{console.log(view);
+  this.view=view;
+});
+
+this.profileService.getProfileRepositories().subscribe(repositories =>{console.log(repositories);
+this.repositories=repositories;
+ });
 
   ngOnInit() {
-  }
-// search(){
-//   // this.http.get("https://api.github.com/users/" * this.userName)
-//   .subscribe((response) =>{
-//     this.response = response;
-//     console.log(this.response);
-//   })
-//  }
+    this.profileService.getProfileRepositories().subscribe(repositories =>{console.log(repositories);
+    this.repositories=repositories;
+    });
+ }
+
 }

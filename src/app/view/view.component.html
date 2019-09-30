@@ -1,11 +1,45 @@
-user name:<input type="text"[(ngModel)]="userName">
-<button (click)="Search()">Search</button> 
-<div *ngif=*response*>
-<p>Login name:{{response ?.login}}</p>
-<p> repos:{{response.public_repos}}</p>
-<p> followers:{{response .followers}}</p>
-<p> gits:{{response .public_gits}}</p>
-<p>following{{response .public_following}}</p>
+<form action="" class="search-form">
+  <div class="form-group">
+    <input type="text" class="form-control" placeholder="Search github Profiles"[(ngModel)]="githubProfiles" name="githubProfiles" (keyup)="findprofile()">
+    </div>
+</form>
+<div>
+  <h1 id="run">Your Results</h1>
+  <div class="row">
+    <div *ngIf ="view" class="col-lg-12">
+      <div>
+        <div>
+          {{view.name}}<small>({{view.login}}</small>
+          <span *ngIf="view.company">Works at{{view.company}}</span>
+          {{view.location}}
+        </div>
+        <img src="{{view.avatar_url}}" class="img-circle img-responsive" alt="Profile Image">
+        <ul class="list-group">
+          <li class="list-group-item" *ngIf="view.bio">{{view.bio}}</li>
+          <li class="list-group-item" *ngIf="view.hireable">Available for hire</li>
+          <li class="list-group-item" *ngIf="view.blog"><a href="{{view.blog}}"target="_blank">{{view.blog}}</a></li>
+          <li class="list-group-item" *ngIf="view.email"><a href="{{view.email}}"target="_blank">{{view.email}}</a>{{view.bio}}</li>
+        </ul>
+      </div>
+      <div class="col-lg-6">
+        <p>
+          <span class="label label-default">{{view.followers}}Followers</span>
+          <span class="label label-default">{{view.following}}Following</span>
+          <span class="label label-default">{{view.public_gits}}Public_gits</span>
+          <span class="label label-default">{{view.public_repositories}}Public_repositories</span>
+        </p>
+        <p><a href="{{view.html_url}}"target="_blank" class="btn btn-primary">View Profile</a></p>
+        <h2 class="panel-title">Repositories</h2>
+      </div> 
+      <div *ngFor="let repository of repositories">
+        <p>
+          {{repository.name}}<br><a href="{{repository.html_url}}" class="btn btn-sm btn-warning">View Project on Github</a>
+        </p>
+        <p>{{repository.description}}</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
