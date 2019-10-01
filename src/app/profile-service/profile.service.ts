@@ -4,6 +4,9 @@ import {HttpClient} from '@angular/common/http';
   providedIn: 'root'
 })
 export class ProfileService {
+  getProfileRepositories(): any {
+    throw new Error("Method not implemented.");
+  }
   private gitUserName:string;
   private clientsecret='27c969407fe2146a312a660856ddec5e477dad52';
 

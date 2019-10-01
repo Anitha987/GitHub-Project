@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import {ProfileService} from '/profile-service/profile.service';
+import {ProfileService} from './profile-service/profile.service';
 import { ViewComponent } from './view/view.component';
 @NgModule({
   declarations: [
@@ -22,6 +22,6 @@ import { ViewComponent } from './view/view.component';
   providers: [
     ProfileService
   ],
-  bootstrap: [AppComponent]
+  // bootstrap: [AppComponent]
 })
 export class AppModule { }
